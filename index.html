@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <script defer src="http://localhost:3400/socket.io/socket.io.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script defer src="controls.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="playerinfo">
+            <p id="pName">Player Name: </p>
+            <p id="pId">PLayer ID: </p>
+        </div>
+        <div id="chse">
+            Choose X or O
+            <div>
+                <button class="i-box" id="xplyr">X</button>
+                <button  class="i-box" id="oplyr">O</button>
+            </div>
+            
+    
+        </div>
+        <div class="container">
+            <input class="i-box" id="box-1">
+            <input class="i-box" id="box-2">
+            <input class="i-box" id="box-3">
+        </div>
+        <div class="container">
+            <input class="i-box" id="box-4">
+            <input class="i-box" id="box-5">
+            <input class="i-box" id="box-6">
+        </div>
+        <div class="container">
+            <input class="i-box" id="box-7">
+            <input class="i-box" id="box-8">
+            <input class="i-box" id="box-9">
+        </div>
+        <div class="container">
+            <button class="i-box btn" id="x">X</button>
+            <button class="i-box btn" id="o">0</button>
+            <button class="i-box btn" id="logo"><img src="kisspng-reload-macos-computer-icons-update-button-5ac50174af2043.0522166715228604047173.png" alt=""></button>
+        </div>
+        
+        <div id="msg">
+            
+        </div>
+        <audio id="gameover">
+            <source src="audio/mixkit-fairytale-game-over-1945.wav">
+        </audio>
+        <audio id="gamewin">
+            <source src="audio/mixkit-video-game-win-2016.wav">
+        </audio>
+        <audio id="xclick">
+            <source src="audio/mixkit-quick-win-video-game-notification-269.wav">
+        </audio>
+        <audio id="oclick">
+            <source src="audio/mixkit-quick-win-video-game-notification-269.wav">
+        </audio>
+    </div>
+    
+</body>
+
+
+</html>
